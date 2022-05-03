@@ -80,3 +80,15 @@ def main():
 					app = MultiApp()
 					app.add_app("Emotion-Based", music.main)
 					app.add_app("Voice-Based", emma.assistant)
+					app.run()
+
+				# elif task == "Analytics":
+				# 	st.subheader("Analytics")
+				# elif task == "Profiles":
+				# 	st.subheader("User Profiles")
+				# 	user_result = view_all_users()
+				# 	clean_db = pd.DataFrame(user_result,columns=["Username","Password"])
+				# 	st.dataframe(clean_db)
+			else:
+				st.warning("Incorrect Username/Password")
+
